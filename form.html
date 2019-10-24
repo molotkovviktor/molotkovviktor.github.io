@@ -5,70 +5,76 @@
     <meta charset="UTF-8">
     <title>Элементы формы</title>
     <style>
-        
-        .form-html5{
+        .form-html5 {
             background-color: rgba(32, 200, 222, 0.56);
-/*            width: 50%;*/
+            /*            width: 50%;*/
             min-width: 400px;
             max-width: 700px;
-            
-            
+            background-image: linear-gradient(#2fd122, #daeb09);
+
             border: 20px solid #1818cc;
             border-radius: 10px;
             margin-left: auto;
             margin-right: auto;
             padding: 15px;
-            
+
         }
-          
+
         .form-group {
-            
-/*            outline: 2px solid gray;*/
+
+            /*            outline: 2px solid gray;*/
             line-height: 180%;
-            
-            
+
+
         }
-        
+
         .lbl-header {
-            
+
             font-size: 12px;
-            font-family: "verdana", sans-serif;]
-            color: #ed1133 
-            text-transform: uppercase;
-            
+            font-family: "verdana", sans-serif;
+            ] color: #ed1133 text-transform: uppercase;
+
         }
-    
+
         .lbl {
             color: darkred;
-            
+
             font-style: italic;
-        
+
         }
-        
+
         .btn {
             margin-top: 10px;
-            margin-bottom: 20px
-            padding: 5px 15px;
-            
+            margin-bottom: 20px padding: 5px 15px;
+
             font-size: 12px;
             font-weight: bold;
             letter-spacing: 1.3px;
             color: white;
             text-transform: uppercase;
             box-shadow: 1px 2px 3px 0 #4b4a69;
-        
+            transition: transform 500ms;
+            
+
         }
-    
+
+        .btn:hover {
+
+            -webkit-transform: scale(1.1) rotate(5deg);
+            cursor: pointer;
+            color: red;
+        }
+
         .btn-reset {
             background-color: chocolate;
             margin-right: 15px;
-            
+
         }
-        
+
         .btn-submit {
             background-color: #d92471
-            
         }
+
     </style>
 </head>
 
@@ -98,14 +104,14 @@
 
             <label class="lbl" for="w">Воллейбол </label>
             <input type="checkbox" id="volleyball" name="hobbi">
-            
+
             <label class="lbl" for="w">Баскетбол </label>
             <input type="checkbox" id="basketball" name="hobbi"></div>
 
-             <div class="form-group">
-                <input class="btn btn-reset" type="reset" value="Очистить">
-                <button class="btn btn-submit" type="submit">Отправить</button>
-        </div>    
+        <div class="form-group">
+            <input class="btn btn-reset" type="reset" value="Очистить">
+            <button class="btn btn-submit" type="submit">Отправить</button>
+        </div>
     </form>
 
 </body>
