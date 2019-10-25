@@ -22,7 +22,7 @@
 
         .form-group {
 
-/*                        outline: 2px solid gray;*/
+            /*                        outline: 2px solid gray;*/
             line-height: 180%;
 
 
@@ -42,6 +42,8 @@
             font-style: italic;
 
         }
+        
+        .txt-delivery
 
         .btn {
             margin-top: 12px;
@@ -54,7 +56,7 @@
             text-transform: uppercase;
             box-shadow: 1px 2px 3px 0 #4b4a69;
             transition: transform 500ms;
-            
+
 
         }
 
@@ -84,34 +86,61 @@
 
         <div class="form-group">
             <label class="lbl-header" for="login">Логин: </label>
-            <input type="text" id="login" class="inpt"></div>
+            <input type="text" id="login" class="inpt" required placeholder="ivanov"></div>
 
         <div class="form-group"><label class="lbl-header" for="pswd">Пароль: </label>
-            <input type="password" id="pswd" class="inpt"></div>
-
-        <div class="form-groupe"><label class="lbl-header" for="">Пол: </label></div>
-        <div class="form-group"><label class="lbl" for="m">Муж </label>
-            <input type="radio" id="m" checked name="sex">
-
-            <label class="lbl" for="w">Жен </label>
-            <input type="radio" id="w" name="sex"></div>
-
-
-        <div class="form-group"><label class="lbl-header" for="">Хобби: </label></div>
-
-        <div class="form-group"><label class="lbl" for="w">Футбол</label>
-            <input type="checkbox" id="football" name="hobbi">
-
-            <label class="lbl" for="w">Воллейбол </label>
-            <input type="checkbox" id="volleyball" name="hobbi">
-
-            <label class="lbl" for="w">Баскетбол </label>
-            <input type="checkbox" id="basketball" name="hobbi"></div>
+            <input type="password" id="pswd" class="inpt" required></div>
 
         <div class="form-group">
-            <input class="btn btn-reset" type="reset" value="Очистить">
-            <button class="btn btn-submit" type="submit">Отправить</button>
-        </div>
+            <label for="tel" class="lbl-header">Телефон: </label>
+            <input type="tel" id="tel" class="inpt" required placeholder="+7 (495) 486-78-87"></div>
+
+        <div class="form-group">
+            <label class="lbl-header" for="email">E-mail: </label>
+            <input type="email" id="email" class="inpt" required placeholder="ivanov@mail.com"></div>
+
+        <div class="form-group">
+            <label class="lbl-header" for="date">Дата: </label>
+            <input type="date" id="date" class="inpt" required placeholder="11.11.1019"></div>
+
+        <div class="form-group">
+            <label class="lbl-header" for="number">Кол-во:</label>
+            <input type="number" id="number" class="inpt" min="0" max="100" step="1" required placeholder="number"></div>
+
+        <div class="form-group">
+            <label class="lbl-header" for="countries">Страна: </label>
+            <select type="countries" id="countries" class="inpt" name="countries">Страна:
+                <option value="ru">Россия</option>
+                <option value="by">Беларусь</option>
+                <option value="kz">Казахстан</option>
+            </select></div>
+            
+            <textarea name="delivery" placeholder="Адрес доставки" class="txt-delivery">Комментарий: </textarea>
+
+
+            <div class="form-groupe"><label class="lbl-header" for="">Пол: </label></div>
+            <div class="form-group"><label class="lbl" for="m">Муж </label>
+                <input type="radio" id="m" checked name="sex">
+
+                <label class="lbl" for="w">Жен </label>
+                <input type="radio" id="w" name="sex"></div>
+
+
+            <div class="form-group"><label class="lbl-header" for="">Хобби: </label></div>
+
+            <div class="form-group"><label class="lbl" for="w">Футбол</label>
+                <input type="checkbox" id="football" name="hobbi">
+
+                <label class="lbl" for="w">Воллейбол </label>
+                <input type="checkbox" id="volleyball" name="hobbi">
+
+                <label class="lbl" for="w">Баскетбол </label>
+                <input type="checkbox" id="basketball" name="hobbi"></div>
+
+            <div class="form-group">
+                <input class="btn btn-reset" type="reset" value="Очистить">
+                <button class="btn btn-submit" type="submit">Отправить</button>
+            </div>
     </form>
 
 </body>
