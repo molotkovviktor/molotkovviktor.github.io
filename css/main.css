@@ -1,0 +1,69 @@
+body {
+    background-image: url("../img/bg-guitars.jpg");
+    background-repeat: no-repeat;
+    background-size: 1336px 1386px;
+    
+}
+
+header,
+footer {
+/*    background-color: #020622;*/
+/*    color: #ffffff;*/
+
+/*    outline: 5px solid #d2d912;*/
+}
+
+h3 {
+    color: #000000;
+    font-size: 72px;
+    
+}
+
+h2 {
+    color: #ff0000;
+    font-size: 92px;
+    
+
+    
+}
+
+.container {
+    outline: 5px solid #e04111;
+}
+
+main {
+    min-height: 400px;
+}
+
+.h-col1,
+.f-col1 {
+    background-color: #f87777;
+}
+
+.h-col2,
+.f-col2 {
+    background-color: #9a9af7;
+}
+
+.h-col3,
+.f-col3 {
+    background-color: #53c653;
+}
+
+.r1-m-col1,
+.r1-m-col2,
+.r1-m-col3,
+.r1-m-col4,
+.r1-m-col5 {
+    background-color: #f7cf87;
+    border: 1px solid #000;
+}
+
+.r2-m-col1,
+.r2-m-col2,
+.r2-m-col3,
+.r2-m-col4,
+.r2-m-col5 {
+    background-color: #b7b1b1;
+    border: 1px solid #000;
+}
